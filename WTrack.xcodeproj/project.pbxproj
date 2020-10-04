@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		255749552529CEF500D9C85E /* WTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 255749532529CEF500D9C85E /* WTrack.xcdatamodeld */; };
 		255749602529CEF600D9C85E /* WTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557495F2529CEF600D9C85E /* WTrackTests.swift */; };
 		2557496B2529CEF600D9C85E /* WTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557496A2529CEF600D9C85E /* WTrackUITests.swift */; };
+		255749892529D50E00D9C85E /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 255749882529D50E00D9C85E /* PromiseKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		255749662529CEF600D9C85E /* WTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2557496A2529CEF600D9C85E /* WTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTrackUITests.swift; sourceTree = "<group>"; };
 		2557496C2529CEF600D9C85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2557497B2529D2C500D9C85E /* WTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WTrack.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				255749892529D50E00D9C85E /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,7 @@
 		255749472529CEF300D9C85E /* WTrack */ = {
 			isa = PBXGroup;
 			children = (
+				2557497B2529D2C500D9C85E /* WTrack.entitlements */,
 				255749482529CEF300D9C85E /* WTrackApp.swift */,
 				2557494A2529CEF300D9C85E /* ContentView.swift */,
 				2557494C2529CEF500D9C85E /* Assets.xcassets */,
@@ -152,6 +156,9 @@
 			dependencies = (
 			);
 			name = WTrack;
+			packageProductDependencies = (
+				255749882529D50E00D9C85E /* PromiseKit */,
+			);
 			productName = WTrack;
 			productReference = 255749452529CEF300D9C85E /* WTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +230,9 @@
 				Base,
 			);
 			mainGroup = 2557493C2529CEF300D9C85E;
+			packageReferences = (
+				255749872529D50E00D9C85E /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = 255749462529CEF300D9C85E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WTrack/WTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WTrack/Preview Content\"";
 				DEVELOPMENT_TEAM = LRZRFZU4FM;
@@ -447,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WTrack/WTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WTrack/Preview Content\"";
 				DEVELOPMENT_TEAM = LRZRFZU4FM;
@@ -588,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		255749872529D50E00D9C85E /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		255749882529D50E00D9C85E /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 255749872529D50E00D9C85E /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		255749532529CEF500D9C85E /* WTrack.xcdatamodeld */ = {
