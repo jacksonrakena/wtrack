@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "AbyssalKit",
+        "repositoryURL": "https://github.com/abyssal/AbyssalKit",
+        "state": {
+          "branch": "main",
+          "revision": "f5f57a1d468335da6dcb3bd8863cb9f623e4b388",
+          "version": null
+        }
+      },
+      {
         "package": "PromiseKit",
         "repositoryURL": "https://github.com/mxcl/PromiseKit",
         "state": {

@@ -7,34 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2538640F252B12EC0092FC42 /* AbyssalKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2538640E252B12EC0092FC42 /* AbyssalKit */; };
 		255749492529CEF300D9C85E /* WTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255749482529CEF300D9C85E /* WTrackApp.swift */; };
 		2557494B2529CEF300D9C85E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557494A2529CEF300D9C85E /* ContentView.swift */; };
 		2557494D2529CEF500D9C85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2557494C2529CEF500D9C85E /* Assets.xcassets */; };
 		255749502529CEF500D9C85E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2557494F2529CEF500D9C85E /* Preview Assets.xcassets */; };
 		255749522529CEF500D9C85E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255749512529CEF500D9C85E /* Persistence.swift */; };
 		255749552529CEF500D9C85E /* WTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 255749532529CEF500D9C85E /* WTrack.xcdatamodeld */; };
-		255749602529CEF600D9C85E /* WTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557495F2529CEF600D9C85E /* WTrackTests.swift */; };
-		2557496B2529CEF600D9C85E /* WTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557496A2529CEF600D9C85E /* WTrackUITests.swift */; };
 		255749892529D50E00D9C85E /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 255749882529D50E00D9C85E /* PromiseKit */; };
 		2557498F2529F6A200D9C85E /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557498E2529F6A200D9C85E /* TextFieldAlert.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2557495C2529CEF600D9C85E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2557493D2529CEF300D9C85E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 255749442529CEF300D9C85E;
-			remoteInfo = WTrack;
-		};
-		255749672529CEF600D9C85E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2557493D2529CEF300D9C85E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 255749442529CEF300D9C85E;
-			remoteInfo = WTrack;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		255749452529CEF300D9C85E /* WTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,12 +27,6 @@
 		255749512529CEF500D9C85E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		255749542529CEF500D9C85E /* WTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WTrack.xcdatamodel; sourceTree = "<group>"; };
 		255749562529CEF500D9C85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2557495B2529CEF600D9C85E /* WTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2557495F2529CEF600D9C85E /* WTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTrackTests.swift; sourceTree = "<group>"; };
-		255749612529CEF600D9C85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		255749662529CEF600D9C85E /* WTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2557496A2529CEF600D9C85E /* WTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTrackUITests.swift; sourceTree = "<group>"; };
-		2557496C2529CEF600D9C85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2557497B2529D2C500D9C85E /* WTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WTrack.entitlements; sourceTree = "<group>"; };
 		2557498E2529F6A200D9C85E /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,20 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				255749892529D50E00D9C85E /* PromiseKit in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		255749582529CEF600D9C85E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		255749632529CEF600D9C85E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2538640F252B12EC0092FC42 /* AbyssalKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				255749472529CEF300D9C85E /* WTrack */,
-				2557495E2529CEF600D9C85E /* WTrackTests */,
-				255749692529CEF600D9C85E /* WTrackUITests */,
 				255749462529CEF300D9C85E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,8 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				255749452529CEF300D9C85E /* WTrack.app */,
-				2557495B2529CEF600D9C85E /* WTrackTests.xctest */,
-				255749662529CEF600D9C85E /* WTrackUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,24 +84,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2557495E2529CEF600D9C85E /* WTrackTests */ = {
-			isa = PBXGroup;
-			children = (
-				2557495F2529CEF600D9C85E /* WTrackTests.swift */,
-				255749612529CEF600D9C85E /* Info.plist */,
-			);
-			path = WTrackTests;
-			sourceTree = "<group>";
-		};
-		255749692529CEF600D9C85E /* WTrackUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2557496A2529CEF600D9C85E /* WTrackUITests.swift */,
-				2557496C2529CEF600D9C85E /* Info.plist */,
-			);
-			path = WTrackUITests;
-			sourceTree = "<group>";
-		};
 		2557498D2529F69900D9C85E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,46 +110,11 @@
 			name = WTrack;
 			packageProductDependencies = (
 				255749882529D50E00D9C85E /* PromiseKit */,
+				2538640E252B12EC0092FC42 /* AbyssalKit */,
 			);
 			productName = WTrack;
 			productReference = 255749452529CEF300D9C85E /* WTrack.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2557495A2529CEF600D9C85E /* WTrackTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 255749722529CEF600D9C85E /* Build configuration list for PBXNativeTarget "WTrackTests" */;
-			buildPhases = (
-				255749572529CEF600D9C85E /* Sources */,
-				255749582529CEF600D9C85E /* Frameworks */,
-				255749592529CEF600D9C85E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2557495D2529CEF600D9C85E /* PBXTargetDependency */,
-			);
-			name = WTrackTests;
-			productName = WTrackTests;
-			productReference = 2557495B2529CEF600D9C85E /* WTrackTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		255749652529CEF600D9C85E /* WTrackUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 255749752529CEF600D9C85E /* Build configuration list for PBXNativeTarget "WTrackUITests" */;
-			buildPhases = (
-				255749622529CEF600D9C85E /* Sources */,
-				255749632529CEF600D9C85E /* Frameworks */,
-				255749642529CEF600D9C85E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				255749682529CEF600D9C85E /* PBXTargetDependency */,
-			);
-			name = WTrackUITests;
-			productName = WTrackUITests;
-			productReference = 255749662529CEF600D9C85E /* WTrackUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -221,14 +127,6 @@
 				TargetAttributes = {
 					255749442529CEF300D9C85E = {
 						CreatedOnToolsVersion = 12.0.1;
-					};
-					2557495A2529CEF600D9C85E = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 255749442529CEF300D9C85E;
-					};
-					255749652529CEF600D9C85E = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 255749442529CEF300D9C85E;
 					};
 				};
 			};
@@ -243,14 +141,13 @@
 			mainGroup = 2557493C2529CEF300D9C85E;
 			packageReferences = (
 				255749872529D50E00D9C85E /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				2538640D252B12EC0092FC42 /* XCRemoteSwiftPackageReference "AbyssalKit" */,
 			);
 			productRefGroup = 255749462529CEF300D9C85E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				255749442529CEF300D9C85E /* WTrack */,
-				2557495A2529CEF600D9C85E /* WTrackTests */,
-				255749652529CEF600D9C85E /* WTrackUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,20 +159,6 @@
 			files = (
 				255749502529CEF500D9C85E /* Preview Assets.xcassets in Resources */,
 				2557494D2529CEF500D9C85E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		255749592529CEF600D9C85E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		255749642529CEF600D9C85E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,36 +177,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		255749572529CEF600D9C85E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				255749602529CEF600D9C85E /* WTrackTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		255749622529CEF600D9C85E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2557496B2529CEF600D9C85E /* WTrackUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2557495D2529CEF600D9C85E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 255749442529CEF300D9C85E /* WTrack */;
-			targetProxy = 2557495C2529CEF600D9C85E /* PBXContainerItemProxy */;
-		};
-		255749682529CEF600D9C85E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 255749442529CEF300D9C85E /* WTrack */;
-			targetProxy = 255749672529CEF600D9C85E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2557496D2529CEF600D9C85E /* Debug */ = {
@@ -488,90 +342,6 @@
 			};
 			name = Release;
 		};
-		255749732529CEF600D9C85E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LRZRFZU4FM;
-				INFOPLIST_FILE = WTrackTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abyssaldev.WTrackTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WTrack.app/WTrack";
-			};
-			name = Debug;
-		};
-		255749742529CEF600D9C85E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LRZRFZU4FM;
-				INFOPLIST_FILE = WTrackTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abyssaldev.WTrackTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WTrack.app/WTrack";
-			};
-			name = Release;
-		};
-		255749762529CEF600D9C85E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LRZRFZU4FM;
-				INFOPLIST_FILE = WTrackUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abyssaldev.WTrackUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WTrack;
-			};
-			name = Debug;
-		};
-		255749772529CEF600D9C85E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LRZRFZU4FM;
-				INFOPLIST_FILE = WTrackUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abyssaldev.WTrackUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WTrack;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,27 +363,17 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		255749722529CEF600D9C85E /* Build configuration list for PBXNativeTarget "WTrackTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				255749732529CEF600D9C85E /* Debug */,
-				255749742529CEF600D9C85E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		255749752529CEF600D9C85E /* Build configuration list for PBXNativeTarget "WTrackUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				255749762529CEF600D9C85E /* Debug */,
-				255749772529CEF600D9C85E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2538640D252B12EC0092FC42 /* XCRemoteSwiftPackageReference "AbyssalKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/abyssal/AbyssalKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		255749872529D50E00D9C85E /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mxcl/PromiseKit";
@@ -625,6 +385,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2538640E252B12EC0092FC42 /* AbyssalKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2538640D252B12EC0092FC42 /* XCRemoteSwiftPackageReference "AbyssalKit" */;
+			productName = AbyssalKit;
+		};
 		255749882529D50E00D9C85E /* PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 255749872529D50E00D9C85E /* XCRemoteSwiftPackageReference "PromiseKit" */;

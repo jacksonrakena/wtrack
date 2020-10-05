@@ -8,20 +8,7 @@
 import SwiftUI
 import CoreData
 import MapKit
-
-struct Utils {
-    static var datef: DateFormatter { get {
-        let l = DateFormatter()
-        l.dateFormat = "h:mm aa"
-        return l
-    }}
-    
-    static var date: DateFormatter { get {
-        let l = DateFormatter()
-        l.dateFormat = "EEEE, MMM d, yyyy"
-        return l
-    }}
-}
+import AbyssalKit
 
 final class MapCheckInPoint: NSObject, MKAnnotation {
     let checkInEvent: CheckInEvent
@@ -30,7 +17,7 @@ final class MapCheckInPoint: NSObject, MKAnnotation {
     
     init (checkInEvent: CheckInEvent) {
         self.checkInEvent = checkInEvent
-        self.title = checkInEvent.friendlyName + ", at " + Utils.datef.string(from: checkInEvent.date)
+        self.title = checkInEvent.friendlyName + ", at " + checkInEvent.date.asTimeString()
         self.coordinate = CLLocationCoordinate2D(latitude: checkInEvent.lat!, longitude: checkInEvent.long!)
     }
 }
@@ -90,7 +77,7 @@ struct CheckInEventView: View {
     var body: some View {
         VStack {
             Text(checkInEvent.friendlyName).bold()
-            Text("Checked in at " + Utils.datef.string(from: checkInEvent.date))
+            Text("Checked in at " + checkInEvent.date.asTimeString())
             if (checkInEvent.lat != nil) {
                 CheckInMapView(checkpoint: MapCheckInPoint(checkInEvent: checkInEvent))
             }
