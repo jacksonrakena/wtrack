@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>WTrack needs to know your location to add location data to your check-ins.</string>
 	<key>NFCReaderUsageDescription</key>
 	<string>WTrack needs to use your iPhone to scan tracking points.</string>
 	<key>CFBundleDevelopmentRegion</key>

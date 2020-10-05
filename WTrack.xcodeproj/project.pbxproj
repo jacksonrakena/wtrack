@@ -16,6 +16,7 @@
 		255749602529CEF600D9C85E /* WTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557495F2529CEF600D9C85E /* WTrackTests.swift */; };
 		2557496B2529CEF600D9C85E /* WTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557496A2529CEF600D9C85E /* WTrackUITests.swift */; };
 		255749892529D50E00D9C85E /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 255749882529D50E00D9C85E /* PromiseKit */; };
+		2557498F2529F6A200D9C85E /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557498E2529F6A200D9C85E /* TextFieldAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2557496A2529CEF600D9C85E /* WTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTrackUITests.swift; sourceTree = "<group>"; };
 		2557496C2529CEF600D9C85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2557497B2529D2C500D9C85E /* WTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WTrack.entitlements; sourceTree = "<group>"; };
+		2557498E2529F6A200D9C85E /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		255749472529CEF300D9C85E /* WTrack */ = {
 			isa = PBXGroup;
 			children = (
+				2557498D2529F69900D9C85E /* Extensions */,
 				2557497B2529D2C500D9C85E /* WTrack.entitlements */,
 				255749482529CEF300D9C85E /* WTrackApp.swift */,
 				2557494A2529CEF300D9C85E /* ContentView.swift */,
@@ -138,6 +141,14 @@
 				2557496C2529CEF600D9C85E /* Info.plist */,
 			);
 			path = WTrackUITests;
+			sourceTree = "<group>";
+		};
+		2557498D2529F69900D9C85E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2557498E2529F6A200D9C85E /* TextFieldAlert.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2557498F2529F6A200D9C85E /* TextFieldAlert.swift in Sources */,
 				255749522529CEF500D9C85E /* Persistence.swift in Sources */,
 				2557494B2529CEF300D9C85E /* ContentView.swift in Sources */,
 				255749492529CEF300D9C85E /* WTrackApp.swift in Sources */,
