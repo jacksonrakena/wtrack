@@ -52,7 +52,7 @@ class LocationManager: NSObject, ObservableObject {
 
     let objectWillChange = PassthroughSubject<Void, Never>()
 
-    private let locationManager = CLLocationManager()
+    public let locationManager = CLLocationManager()
 }
 
 extension LocationManager: CLLocationManagerDelegate {
@@ -65,8 +65,10 @@ extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         self.lastLocation = location
-        print("updating last location")
-        print(#function, location)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(#function, error.localizedDescription)
     }
 
 }

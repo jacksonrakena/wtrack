@@ -124,22 +124,16 @@ struct CheckInHistoryView: View {
     
     var body: some View {
         NavigationView {
-            Text(Dictionary(grouping: api.checkInEvents, by: { Calendar.current.date(from: Calendar.current.dateComponents([.year, .month, .day], from: $0.date))! }).sorted(by: {$0.key > $1.key}).count)
-            ForEach(Dictionary(grouping: api.checkInEvents, by: { Calendar.current.date(from: Calendar.current.dateComponents([.year, .month, .day], from: $0.date))! }).sorted(by: {$0.key > $1.key}), id: \.key) { (key, value) in
-                Text(Utils.date.string(from: key)).bold()
-                    List {
-                        ForEach(value.sorted(by: { (d0, d1) -> Bool in
-                            d0.date.compare(d1.date) == .orderedDescending
-                        }), id: \.id) { element in
-                            NavigationLink(destination: CheckInEventView(checkInEvent: element)) {
-                                HStack {
-                                    Text(element.friendlyName)
-                                    Spacer()
-                                    Text(Utils.datef.string(from: element.date)).foregroundColor(Color.gray)
-                                }
-                            }
+            List {
+                ForEach(api.checkInEvents.sorted(by: {$0.date > $1.date}), id: \.id) { e in
+                    NavigationLink(destination: CheckInEventView(checkInEvent: e)) {
+                        HStack {
+                            Text(e.friendlyName)
+                            Spacer()
+                            Text(e.date.asTimeString()).foregroundColor(Color.gray)
                         }
                     }
+                }
             }.navigationTitle("History")
         }
     }
@@ -160,6 +154,8 @@ struct HomeView: View {
                         Image(systemName: "wave.3.right.circle").font(.title)
                         Text("Check-in").fontWeight(.semibold).font(.title)
                     }.padding().foregroundColor(.white).background(Color.yellow).cornerRadius(40)
+                }.onAppear {
+                    //LocationManager.shared.locationManager.requestLocation()
                 }
                 
                 Button(action: {
@@ -236,10 +232,6 @@ final class WTrackNFCScanner: NSObject, ObservableObject, NFCTagReaderSessionDel
     
     func addManualCheckIn(name: String) {
         DispatchQueue.main.async {
-            let d = LocationManager.shared.lastLocation
-        }
-        
-        DispatchQueue.main.async {
             var checkInEvent = CheckInEvent(friendlyName: name)
             if (LocationManager.shared.lastLocation != nil) {
                 checkInEvent.lat = LocationManager.shared.lastLocation!.coordinate.latitude
@@ -250,6 +242,9 @@ final class WTrackNFCScanner: NSObject, ObservableObject, NFCTagReaderSessionDel
     }
     
     func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) {
+        DispatchQueue.main.async {
+            LocationManager.shared.locationManager.requestLocation()
+        }
         if tags.count > 1 {
             session.invalidate(errorMessage: "More than 1 point was found. Please present only 1 point.")
             return
@@ -260,16 +255,10 @@ final class WTrackNFCScanner: NSObject, ObservableObject, NFCTagReaderSessionDel
             return
         }
         
-        print("Got a tag!", firstTag)
-        
         session.connect(to: firstTag) { (error: Error?) in
             if error != nil {
                 session.invalidate(errorMessage: "Connection error. Please try again.")
                 return
-            }
-            
-            DispatchQueue.main.async {
-                let d = LocationManager.shared.lastLocation
             }
             
             switch firstTag {
@@ -308,7 +297,7 @@ final class WTrackNFCScanner: NSObject, ObservableObject, NFCTagReaderSessionDel
                         }
                         
                         self.checkInEvents.append(checkInEvent)
-                        session.alertMessage = "Checked in to " + checkInEvent.friendlyName + " at " + Utils.datef.string(from: checkInEvent.date) + "."
+                        session.alertMessage = "Checked in to " + checkInEvent.friendlyName + " at " + checkInEvent.date.asTimeString() + "."
                         session.invalidate()
                     }
                 }
